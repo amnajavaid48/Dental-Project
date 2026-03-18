@@ -4,9 +4,9 @@ import { ArrowRight } from "lucide-react";
 
 export default function About() {
   const images = [
-    { src: "/About1.png" },
-    { src: "/About2.png" },
-    { src: "/About3.png" },
+    { src: "/About/About1.png" },
+    { src: "About/About2.png" },
+    { src: "About/About3.png" },
   ];
 
   return (

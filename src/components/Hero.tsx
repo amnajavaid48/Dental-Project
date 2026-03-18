@@ -68,9 +68,9 @@ export default function Hero() {
         {/* RIGHT IMAGE SECTION */}
         <div className="flex-1 relative flex justify-end items-end self-end h-full md:pt-20 ">
           {/* Main Doctor Image - Touching the bottom edge */}
-          <div className="relative z-30 w-full max-w-[550px] md:mt-auto ">
+          <div className="relative z-30 w-full max-w-137.5 md:mt-auto ">
             <Image
-              src="/HeroImg.png"
+              src="/Hero/HeroImg.png"
               alt="Smiling Professional"
               width={600}
               height={700}
