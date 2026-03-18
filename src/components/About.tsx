@@ -50,7 +50,7 @@ export default function About() {
 
         {/* RIGHT SIDE - TEXT */}
         <div className="space-y-6">
-          <h1 className="font-semibold text-3xl lg:text-[42px] leading-tight text-gray-900">
+          <h1 className="font-semibold font-serif text-3xl lg:text-[42px] leading-tight text-gray-900">
             Promising You Award <br /> Winning Dentistry
           </h1>
 
