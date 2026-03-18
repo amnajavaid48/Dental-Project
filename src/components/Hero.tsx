@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/HeroBgImage.png"
+          src="/Hero/HeroBgImage.png"
           alt="Clinic Background"
           fill
           className="object-cover"

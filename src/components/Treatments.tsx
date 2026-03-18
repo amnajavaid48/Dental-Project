@@ -35,7 +35,7 @@ export default function Treatment() {
           Treatments We Offer
         </h1>
 
-        {/* 1. Hero Section (Buttons half-on-image) */}
+        {/* 1. Hero Section */}
         <div className="flex flex-col md:flex-row gap-8 mb-32">
           {/* General Dentistry Card */}
           <div className="relative flex-1 group">
@@ -48,7 +48,8 @@ export default function Treatment() {
               />
             </div>
             {/* Button: Positioned half-way down */}
-            <Button className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-[#B0653C] hover:bg-[#965432] text-white min-w-70 h-14 text-lg flex justify-between px-6 rounded-sm shadow-xl z-20">
+            <Button className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-[#B0653C] hover:bg-[#965432]
+             text-white min-w-70 h-14 text-lg flex justify-between px-6 rounded-sm shadow-xl z-20">
               General Dentistry <ChevronUp size={22} />
             </Button>
           </div>
@@ -63,7 +64,8 @@ export default function Treatment() {
                 className="object-cover"
               />
             </div>
-            <Button className="absolute -bottom-7 left-1/2 -translate-x-1/2 bg-[#425466] hover:bg-[#324150] text-white min-w-70 h-14 text-lg flex justify-between px-6 rounded-sm shadow-xl z-20">
+            <Button className="absolute -bottom-7 left-1/2 -translate-x-1/2 bg-[#425466] hover:bg-[#324150] text-white 
+            min-w-70 h-14 text-lg flex justify-between px-6 rounded-sm shadow-xl z-20">
               Cosmetic Dentistry <ChevronDown size={22} />
             </Button>
           </div>
@@ -75,7 +77,7 @@ export default function Treatment() {
             {treatments.map((item, index) => (
               <Card
                 key={index}
-                className={`relative flex flex-col items-center p-14 rounded-none border-none shadow-none transition-all duration-300
+                className={`relative flex flex-col items-center  rounded-none border-none shadow-none transition-all duration-300
                   border-b border-r border-gray-300/40
                   ${item.active ? "bg-white shadow-2xl z-10 scale-[1.01]" : "bg-transparent hover:bg-white/40"}`}
               >
