@@ -1,6 +1,11 @@
 import Image from "next/image";
+import React from "react";
 
-const locations = [
+// --- TypeScript type for location ---
+type Location = string;
+
+// --- Locations Array ---
+const locations: Location[] = [
   "Ingatestone",
   "Romford",
   "Harold Wood",
@@ -19,17 +24,17 @@ export default function MapArea() {
     <section className="relative w-full py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="relative flex flex-col lg:flex-row items-center">
-          {/* 1. Content Card - Width increased to accommodate 3 columns */}
+          {/* 1. Content Card */}
           <div className="relative z-20 w-full lg:w-112.5 bg-[#F8EFEB] p-8 md:p-10 rounded-lg shadow-sm lg:-mr-24 mb-8 lg:mb-0">
             <h2 className="text-4xl font-serif text-[#1A2B4B] mb-8">
               Areas We Serve
             </h2>
 
-            {/* Grid updated to 3 columns for desktop */}
+            {/* Locations Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-y-5 gap-x-4">
-              {locations.map((loc, index) => (
+              {locations.map((loc) => (
                 <div
-                  key={index}
+                  key={loc}
                   className="flex items-center gap-2 group cursor-default"
                 >
                   <div className="relative w-4 h-4 shrink-0 opacity-80 group-hover:opacity-100 transition-opacity">
@@ -49,7 +54,7 @@ export default function MapArea() {
           </div>
 
           {/* 2. Map Image Container */}
-          <div className="relative z-10 w-full lg:flex-1 h-100 md:h-120 rounded-2xl overflow-hidden ">
+          <div className="relative z-10 w-full lg:flex-1 h-100 md:h-120 rounded-2xl overflow-hidden">
             <Image
               src="/MapImgs/Map.png"
               alt="Start Smiling Location Map"

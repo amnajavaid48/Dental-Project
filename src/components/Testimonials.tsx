@@ -18,7 +18,7 @@ export default function Testimonials() {
           <Card className="flex-2 lg:max-w-152.5 bg-[#fdf7f2] border-none rounded-2xl overflow-hidden shadow-sm flex flex-col">
             <div className="relative w-full aspect-video h-55 ">
               <Image
-                src="/testimonial img.png"
+                src="/Testimonial Img.png"
                 alt="Patient Video"
                 fill
                 className="px-2 "
@@ -92,19 +92,28 @@ export default function Testimonials() {
 
         {/* Navigation Buttons */}
         <div className="flex justify-center gap-4 mt-12">
-          <Button
-            size="icon"
-            className="w-10 h-10 rounded-full bg-[#b36b3f] hover:bg-[#9a5a33] text-white"
+          {/* Left Button */}
+          <button
+            className="w-14 h-14 flex items-center justify-center bg-[#b36b3f] hover:bg-[#9a5a33] text-white shadow-md transition-all active:scale-95"
+            style={{
+              borderRadius: "100% 100% 100% 0",
+              transform: "rotate(45deg)",
+            }}
           >
-            <ArrowLeft className="h-5 w-5" />
-          </Button>
-          <Button
-            variant="outline"
-            size="icon"
-            className="w-10 h-10 rounded-full border-slate-300"
+            <ArrowLeft className="h-6 w-6 -rotate-45" />
+          </button>
+
+          {/* Right Button*/}
+          <button
+            className="w-14 h-14 flex items-center justify-center border border-[#121F39] bg-white text-[#121F39] hover:bg-slate-50 shadow-md transition-all active:scale-95"
+            style={{
+              borderRadius: "100% 100% 100% 0",
+              transform: "rotate(-135deg)",
+            }}
           >
-            <ArrowRight className="h-5 w-5 text-slate-600" />
-          </Button>
+            {/* Icon ko wapis seedha karne ke liye 135deg rotate kiya hai */}
+            <ArrowRight className="h-6 w-6 rotate-135" />
+          </button>
         </div>
       </div>
     </section>

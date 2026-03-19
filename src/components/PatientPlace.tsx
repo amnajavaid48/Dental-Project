@@ -17,9 +17,9 @@ export default function PatientPlace() {
         />
       </div>
 
-      {/* 2. Rotating Circles Container - Sizes reduced for better top/bottom spacing */}
+    
       <div className="relative z-10 flex items-center justify-center w-full max-w-4xl px-4">
-        {/* Large Outer Circle (Size reduced from 150 to 130) */}
+
         <div className="absolute w-96 h-96 md:w-130 md:h-130 opacity-20 animate-spin-slow">
           <Image
             src="/PatientPlaceImages/Circle.png"
@@ -29,7 +29,6 @@ export default function PatientPlace() {
           />
         </div>
 
-        {/* Smaller Inner Circle (Size reduced from 112.5 to 90) */}
         <div className="absolute w-64 h-64 md:w-90 md:h-90 opacity-30 animate-reverse-spin">
           <Image
             src="/PatientPlaceImages/Circle2.png"
@@ -45,7 +44,7 @@ export default function PatientPlace() {
             Welcome To Your Happy Place
           </h2>
 
-          {/* Paragraph limited to max-width to ensure it stays in ~2 lines */}
+          
           <p className="mb-10 leading-relaxed ">
             Dental visits can be enjoyable. At Start Smiling, we combine
             advanced digital dentistry with a modern, tranquil, spa-like
